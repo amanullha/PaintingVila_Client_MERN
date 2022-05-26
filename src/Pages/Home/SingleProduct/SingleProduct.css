@@ -1,0 +1,7 @@
+
+.main-product-button{
+    display: none;
+}
+.main-product-card:hover .main-product-button{
+    display: flex;
+}

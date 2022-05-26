@@ -1,0 +1,110 @@
+[
+{
+   "name":"Wall cleaner",
+   "image":"https://i.ibb.co/VS3dWjk/wall-cleaner.jpg",
+   "description":"You want to work with a clean surface since a dirty wall could prevent the paint from adhering or cause the paint to bubble.I like to use a classic cleaner, Spic and Span, with a little bit of water and a sponge to get any surface dirt off the walls before I paint",
+   "minimumOrder":50,
+   "availableQuantity":1000,
+   "unitPrice":25
+   
+},
+{
+   "name":"Painter's Tape",
+   "image":"https://i.ibb.co/zR95BRR/Painters-Tape.jpg",
+   "description":"While purchasing a quality painter's tape like 3M or Frogtape is important, it's more about how you apply it. Once it's on the wall, run a damp rag over the edge to create a seal. Pay attention to the release dates, or when the tape needs to come off, it varies from 15 to 30 days.",
+   "minimumOrder":50,
+   "availableQuantity":1000,
+   "unitPrice":25
+   
+},
+{
+   "name":"Brushes",
+   "image":"https://i.ibb.co/BtS4ntf/Brushes.jpg",
+   "description":"A 2 1/2-inch angled brush was made for painting trim and cutting in. Look for quality brands like Wooster, Purdy, and Benjamin Moore.",
+   "minimumOrder":50,
+   "availableQuantity":1000,
+   "unitPrice":25
+   
+}
+,
+{
+   "name":"Rollers",
+   "image":"https://i.ibb.co/10FYscg/Rollers.jpg",
+   "description":"A standard 9-inch roller with a synthetic core and a 3/8-inch nap is a classic. Test the core, take your thumb and index finger and push down on each side on the end of the roller. You shouldn't be able to close that opening, says Manfredini. Ace and Shur-Line both make quality roller covers. Mini paint roller frames are also convenient for working around small spaces.",
+   "minimumOrder":50,
+   "availableQuantity":1000,
+   "unitPrice":25
+   
+},
+{
+   "name":"Paint Brush Cleaner",
+   "image":"https://i.ibb.co/0c6WYN1/Paint-Brush-Cleaner.jpg",
+   "description":"This painting product ensures that painting newbies get their quality brushes completely clean for future use.",
+   "minimumOrder":50,
+   "availableQuantity":1000,
+   "unitPrice":25
+   
+}
+,
+{
+   "name":"Plastic Bucket",
+   "image":"https://i.ibb.co/FX94Pkh/Plastic-Bucket.jpg",
+   "description":"It's easier to pour paint into these containers than to work from a quart or gallon.",
+   "minimumOrder":50,
+   "availableQuantity":1000,
+   "unitPrice":25
+   
+},
+{
+   "name":"Plastic Roller Tray",
+   "image":"https://i.ibb.co/k4p63hc/Plastic-Roller-Tray.jpg",
+   "description":"Instead of metal, buy a heavy-duty plastic tray. They're rigid, but when you go to clean them, the latex paint doesn't stick and comes right off.",
+   "minimumOrder":50,
+   "availableQuantity":1000,
+   "unitPrice":25
+   
+},
+{
+   "name":"Roller Extension Pole",
+   "image":"https://i.ibb.co/ZhtWgS8/Roller-Extension-Pole.jpg",
+   "description":"An extendable two-foot roller extension should work in most spaces, but keep the height of your ceiling in mind when shopping for supplies.",
+   "minimumOrder":50,
+   "availableQuantity":1000,
+   "unitPrice":25
+   
+},
+{
+   "name":"Sturdy Ladder",
+   "image":"https://i.ibb.co/1b71W63/Sturdy-Ladder.jpg",
+   "description":"A standard six-foot aluminum or fiberglass ladder that fits your weight specifications (don't forget that you need to add on approximately how much you'll be carrying up it) is a good investment piece.",
+   "minimumOrder":50,
+   "availableQuantity":1000,
+   "unitPrice":25
+   
+}
+,
+{
+   "name":"Paint Pads",
+   "image":"https://i.ibb.co/SQbRzyg/Paint-Pads.jpg",
+   "description":"Skip these, unless you're using them to paint behind hard-to-reach areas like a toilet tank or radiator.",
+   "minimumOrder":50,
+   "availableQuantity":1000,
+   "unitPrice":25
+   
+}
+,
+{
+   "name":"Sanding Sponges",
+   "image":"https://i.ibb.co/TBQ7xKB/Sanding-Sponges.jpg",
+   "description":"A medium and fine grit sponge can handle most jobs.If you don't want to make a lot of dust by sanding, skip the sandpaper and smooth your spackle out with a damp sponge and warm water, says Manfredini. It will get the job done with zero dust.",
+   "minimumOrder":50,
+   "availableQuantity":1000,
+   "unitPrice":25
+   
+}
+
+
+
+
+
+]
