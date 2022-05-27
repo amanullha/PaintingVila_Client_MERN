@@ -35,27 +35,31 @@ This is a inventory management website . user will be able to add item and updat
 - Login using Google
 - Reset Password Mail using React hook
 - Explore website
-- Manage inventories
-- Add/update product via valid user
-- Delete own product
-- See added product which added by me
+- Add user to MongoDB
+- permission admin
+- Add/delete/Update product by admin
+- Delete unpaid orders by admin
+- Add product to cart by user
+- check all the own orders by user and all the orders by admin
+- Take review via user
+- Edit profile
 
-[Branch(FontEnd)](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-amanullha)
+[Branch(FontEnd)](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-amanullha)
 
-[Branch(BackEnd)](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-amanullha)
+[Branch(BackEnd)](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-amanullha)
 
 ## FontEnd Design 🙈 :
 
 <table>
  
   <tr>
-    <td><img src="https://i.ibb.co/bz9YYzd/Screenshot-from-2022-05-08-02-23-21.png" alt="mockups" /></td>
-    <td><img src="https://i.ibb.co/rMkcBtX/Screenshot-from-2022-05-08-02-20-38.png" alt="mockup" /></td>
+    <td><img src="https://i.ibb.co/MCFCXyv/Screenshot-from-2022-05-27-20-09-26.png" alt="mockups" /></td>
+    <td><img src="https://i.ibb.co/z47PYGW/Screenshot-from-2022-05-27-20-09-33.png" alt="mockup" /></td>
     
   </tr>
    <tr>
-    <td><img src="https://i.ibb.co/mhYXL9M/Screenshot-from-2022-05-08-02-20-03.png" alt="mockup" /></td>
-    <td><img src="https://i.ibb.co/w09LCw9/Screenshot-from-2022-05-08-02-20-18.png" alt="mockups" /></td>
+    <td><img src="https://i.ibb.co/CVjPRKg/Screenshot-from-2022-05-27-20-09-38.png" alt="mockup" /></td>
+    <td><img src="https://i.ibb.co/V2zjcHn/Screenshot-from-2022-05-27-20-09-55.png" alt="mockups" /></td>
   </tr>
 </table>
 
