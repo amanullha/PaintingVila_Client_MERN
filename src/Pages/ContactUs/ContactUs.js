@@ -27,7 +27,7 @@ const ContactUs = () => {
                             <h1 className='text-xl my-3'>xyz,dhanmondhi,Dhaka</h1>
                             <h1>+88-0199999999999</h1>
                             <h1>+88-0177777777777</h1>
-                            <h1 className='my-2'>info@stackbinder.com</h1>
+                            <h1 className='my-2'>info@paintingvila.com</h1>
                         </div>
                     </Fade>
 
@@ -36,7 +36,7 @@ const ContactUs = () => {
                             <h1 className='text-2xl font-bold'>USA Office. </h1>
                             <h1 className='text-xl my-3'>xyz,dhanmondhi,Dhaka</h1>
                             <h1>+1 929-431-424155</h1>
-                            <h1 className='my-2'>info@stackbinder.com</h1>
+                            <h1 className='my-2'>info@paintingvila.com</h1>
                         </div>
                     </Fade>
 
@@ -49,7 +49,7 @@ const ContactUs = () => {
                             <h1 className='text-2xl font-bold'>Careers </h1>
                             <h1 className='text-xl my-3'>Recruiting</h1>
                             <h1>+1 929-431-424155</h1>
-                            <h1 className='my-2'>hr@stackbinder.com</h1>
+                            <h1 className='my-2'>hr@paintingvila.com</h1>
                         </div>
                     </Fade>
                 </div>

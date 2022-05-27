@@ -25,6 +25,7 @@ import auth from './firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import About from './Pages/About/About';
+import ContactUs from './Pages/ContactUs/ContactUs';
 
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
 
 
         <Route path="/about" element={<About />}></Route>
+        <Route path="/contact-us" element={<ContactUs />}></Route>
 
 
 

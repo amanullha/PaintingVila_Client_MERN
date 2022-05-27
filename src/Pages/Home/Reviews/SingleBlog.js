@@ -2,6 +2,7 @@ import { faCommentMedical, faMessage, faThumbsDown, faThumbsUp } from '@fortawes
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { FaStar } from "react-icons/fa";
+import { Fade } from 'react-reveal';
 
 const colors = {
     orange: "#FFBA5A",
@@ -29,56 +30,56 @@ const SingleBlog = ({ blogText, blogQuestion, blogWriter, blogWriterImg, blogWri
 
     return (
 
-
-        <div className=' m-3 shadow-xl p-3 rounded-lg '>
-            <div className=" flex items-center justify-between bg-slate-200">
-                <div className=" flex items-center gap-2 ">
-
-
-                    {
-                        blogWriterImg ? <img width={100} className="h-[80px] rounded-r-full" src={blogWriterImg} alt="" /> :
-                            <img width={100} className="h-[80px] rounded-r-full" src="https://api.lorem.space/image/face?hash=33791" />
-                    }
+        <Fade top>
+            <div className=' m-3 shadow-xl p-3 rounded-lg '>
+                <div className=" flex items-center justify-between bg-slate-200">
+                    <div className=" flex items-center gap-2 ">
 
 
+                        {
+                            blogWriterImg ? <img width={100} className="h-[80px] rounded-r-full" src={blogWriterImg} alt="" /> :
+                                <img width={100} className="h-[80px] rounded-r-full" src="https://api.lorem.space/image/face?hash=33791" />
+                        }
 
 
-                    <sub className='text-gray-500'>By</sub>
 
-                    <div className="blogTexter ">
-                        <h3 className='text-3xl text-yellow-800'>{blogWriter}</h3>
-                        <h5 className=' text-red-400 '>{blogWritingDate}</h5>
+
+                        <sub className='text-gray-500'>By</sub>
+
+                        <div className="blogTexter ">
+                            <h3 className='text-3xl text-yellow-800'>{blogWriter}</h3>
+                            <h5 className=' text-red-400 '>{blogWritingDate}</h5>
+                        </div>
                     </div>
+
+                    <div className=" ">
+
+
+
+
+
+
+                        <button className='rounded-l-full bg-blue-600 h-[80px] px-5 text-white font-bold active:bg-blue-300 active:text-black' >Follow</button>
+                    </div>
+
                 </div>
-
-                <div className=" ">
-
-
+                <div className=" blogText-section pl-2 mt-3 tracking-wide">
+                    <h1 className='font-bold text-3xl'>{blogQuestion}</h1>
 
 
-
-
-                    <button className='rounded-l-full bg-blue-600 h-[80px] px-5 text-white font-bold active:bg-blue-300 active:text-black' >Follow</button>
+                    <p className='pl-2 mt-3'>{blogText?.slice(0, 50)}</p>
+                    <button className='pl-2' onClick={lessClicked}>{command}</button>
                 </div>
+                <div className="comment pl-2 mt-3 bg-slate-50 p-2">
+                    <div className='flex items-center gap-5'>
 
-            </div>
-            <div className=" blogText-section pl-2 mt-3 tracking-wide">
-                <h1 className='font-bold text-3xl'>{blogQuestion}</h1>
-
-
-                <p className='pl-2 mt-3'>{blogText?.slice(0, 50)}</p>
-                <button className='pl-2' onClick={lessClicked}>{command}</button>
-            </div>
-            <div className="comment pl-2 mt-3 bg-slate-50 p-2">
-                <div className='flex items-center gap-5'>
-
-                    <FontAwesomeIcon className='border p-2 rounded-full active:bg-green-400' icon={faThumbsUp} />
-                    <FontAwesomeIcon className='border p-2 rounded-full active:bg-red-400' icon={faThumbsDown} />
+                        <FontAwesomeIcon className='border p-2 rounded-full active:bg-green-400' icon={faThumbsUp} />
+                        <FontAwesomeIcon className='border p-2 rounded-full active:bg-red-400' icon={faThumbsDown} />
 
 
 
 
-                    {/* <div className="rating">
+                        {/* <div className="rating">
 
                         <input type="radio" name="rating-1" className="mask mask-star" />
                         <input type="radio" name="rating-1" className="mask mask-star" />
@@ -91,31 +92,35 @@ const SingleBlog = ({ blogText, blogQuestion, blogWriter, blogWriterImg, blogWri
 
                     </div> */}
 
-                    <div>
-                        <div style={styles.container}>
-                            <div style={styles.stars}>
-                                {stars.map((_, index) => {
-                                    return (
-                                        <FaStar
-                                            key={index}
-                                            size={24}
+                        <div>
+                            <div style={styles.container}>
+                                <div style={styles.stars}>
+                                    {stars.map((_, index) => {
+                                        return (
+                                            <FaStar
+                                                key={index}
+                                                size={24}
 
-                                            color={(currentValue) > index ? colors.orange : colors.grey}
-                                            style={{
-                                                marginRight: 10,
-                                                cursor: "pointer"
-                                            }}
-                                        />
-                                    )
-                                })}
+                                                color={(currentValue) > index ? colors.orange : colors.grey}
+                                                style={{
+                                                    marginRight: 10,
+                                                    cursor: "pointer"
+                                                }}
+                                            />
+                                        )
+                                    })}
+                                </div>
+
+                                {/* <h1>{hoverValue} {currentValue} {stars}</h1> */}
+
+
+
                             </div>
-
-                            {/* <h1>{hoverValue} {currentValue} {stars}</h1> */}
-
-
-
                         </div>
+
+
                     </div>
+
 
 
                 </div>
@@ -123,11 +128,7 @@ const SingleBlog = ({ blogText, blogQuestion, blogWriter, blogWriterImg, blogWri
 
 
             </div>
-
-
-
-        </div>
-
+        </Fade>
 
     );
 };

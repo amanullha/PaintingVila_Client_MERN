@@ -65,7 +65,7 @@ const ManageProduct = () => {
         const newValue = e.target.value;
 
 
-        
+
         setPurchaseUnitInput(newValue)
     }
 
