@@ -44,7 +44,7 @@ const AddReview = () => {
             reviewStars: currentValue
         };
 
-        fetch('http://localhost:5000/review', {
+        fetch('https://whispering-ravine-55878.herokuapp.com/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

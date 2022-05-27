@@ -6,7 +6,7 @@ import DoctorRow from './DoctorRow';
 const ManageDoctor = () => {
 
 
-    const { data: doctors, isLoading, refetch } = useQuery('doctors', () => fetch('http://localhost:5000/doctors', {
+    const { data: doctors, isLoading, refetch } = useQuery('doctors', () => fetch('https://whispering-ravine-55878.herokuapp.com/doctors', {
         method: 'GET',
         headers: {
             'content-type': 'application/json',

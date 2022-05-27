@@ -9,7 +9,7 @@ const AddDoctor = () => {
     let errorMessage;
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const { data: services, isLoading } = useQuery('services', () => fetch('http://localhost:5000/services').then(res => res.json()))
+    const { data: services, isLoading } = useQuery('services', () => fetch('https://whispering-ravine-55878.herokuapp.com/services').then(res => res.json()))
 
 
     const imageStorageKey = '72f50ab39ec96a1ad0d2d7bb89b0f288';
@@ -50,7 +50,7 @@ const AddDoctor = () => {
 
                     // add doctor 
 
-                    fetch('http://localhost:5000/doctor', {
+                    fetch('https://whispering-ravine-55878.herokuapp.com/doctor', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

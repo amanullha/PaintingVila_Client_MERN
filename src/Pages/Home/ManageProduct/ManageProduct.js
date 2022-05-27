@@ -21,7 +21,7 @@ const ManageProduct = () => {
     // console.log("productId  :", productId);
 
 
-    const { data: product, isLoading, refetch } = useQuery('products', () => fetch(`http://localhost:5000/products/${productId}`, {
+    const { data: product, isLoading, refetch } = useQuery('products', () => fetch(`https://whispering-ravine-55878.herokuapp.com/products/${productId}`, {
         method: 'GET',
         headers: {
             'content-type': 'application/json',
@@ -74,7 +74,7 @@ const ManageProduct = () => {
         const orderedQuantity = parseInt(purchaseUnitInput);
         // const existingQuantity = product?.availableQuantity - orderedQuantity;
 
-        fetch(`http://localhost:5000/products/${product._id}`, {
+        fetch(`https://whispering-ravine-55878.herokuapp.com/products/${product._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',
@@ -119,7 +119,7 @@ const ManageProduct = () => {
         if (user) {
 
             order.userEmail = user?.email;
-            fetch(`http://localhost:5000/orders`, {
+            fetch(`https://whispering-ravine-55878.herokuapp.com/orders`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

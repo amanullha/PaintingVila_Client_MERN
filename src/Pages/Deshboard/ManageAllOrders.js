@@ -15,7 +15,7 @@ const ManageAllOrders = () => {
     const navigate = useNavigate();
 
 
-    const { data: orders, isLoading, refetch } = useQuery('my-orders', () => fetch(`http://localhost:5000/orders`, {
+    const { data: orders, isLoading, refetch } = useQuery('my-orders', () => fetch(`https://whispering-ravine-55878.herokuapp.com/orders`, {
         method: 'GET',
         headers: {
             'content-type': 'application/json',
@@ -32,7 +32,7 @@ const ManageAllOrders = () => {
 
         if (cancelItem) {
 
-            fetch(`http://localhost:5000/order/${cancelItem._id}`, {
+            fetch(`https://whispering-ravine-55878.herokuapp.com/order/${cancelItem._id}`, {
                 method: 'DELETE',
                 headers: {
                     'content-type': 'application/json',
@@ -58,7 +58,7 @@ const ManageAllOrders = () => {
 
     const addCancelOrderQuantityToDb = (item) => {
 
-        fetch(`http://localhost:5000/products/${item?.productId}`, {
+        fetch(`https://whispering-ravine-55878.herokuapp.com/products/${item?.productId}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',

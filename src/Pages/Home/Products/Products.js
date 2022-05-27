@@ -11,7 +11,7 @@ const Products = ({ callFrom }) => {
     useEffect(() => {
 
 
-        fetch('http://localhost:5000/products')
+        fetch('https://whispering-ravine-55878.herokuapp.com/products')
             .then(res => res.json())
             .then(data => {
                 loader = false;

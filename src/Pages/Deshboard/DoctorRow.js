@@ -6,7 +6,7 @@ const DoctorRow = ({ doctor, index, refetch }) => {
 
     const handleDeleteDoctor = () => {
 
-        fetch(`http://localhost:5000/doctor/${doctor.email}`, {
+        fetch(`https://whispering-ravine-55878.herokuapp.com/doctor/${doctor.email}`, {
             method: 'DELETE',
             headers: {
                 'content-type': 'application/json',

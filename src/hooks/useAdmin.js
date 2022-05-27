@@ -11,7 +11,7 @@ const useAdmin = (user) => {
 
         if (email) {
 
-            fetch(`http://localhost:5000/admin/${email}`, {
+            fetch(`https://whispering-ravine-55878.herokuapp.com/admin/${email}`, {
                 method: 'GET',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem('accessToken')}`

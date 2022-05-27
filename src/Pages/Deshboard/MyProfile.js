@@ -20,7 +20,7 @@ const MyProfile = () => {
     const [linkedIn, setLinkedIn] = useState('')
 
 
-    // const { data: profile, isLoading, refetch } = useQuery('my-profile', () => fetch(`http://localhost:5000/my-profile?email=${user?.email}`, {
+    // const { data: profile, isLoading, refetch } = useQuery('my-profile', () => fetch(`https://whispering-ravine-55878.herokuapp.com/my-profile?email=${user?.email}`, {
     //     method: 'GET',
     //     headers: {
     //         'content-type': 'application/json',
@@ -33,7 +33,7 @@ const MyProfile = () => {
     useEffect(() => {
         setLoader(true);
 
-        fetch(`http://localhost:5000/my-profile?email=${user?.email}`, {
+        fetch(`https://whispering-ravine-55878.herokuapp.com/my-profile?email=${user?.email}`, {
             method: 'GET',
             headers: {
                 'content-type': 'application/json',
@@ -113,7 +113,7 @@ const MyProfile = () => {
         }
         // console.log("update profile: ", profileData);
 
-        fetch(`http://localhost:5000/my-profile/${profile._id}`, {
+        fetch(`https://whispering-ravine-55878.herokuapp.com/my-profile/${profile._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',

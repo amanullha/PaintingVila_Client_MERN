@@ -10,7 +10,7 @@ const Reviews = () => {
 
     useState(() => {
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://whispering-ravine-55878.herokuapp.com/reviews', {
             method: 'GET',
             headers: {
                 'content-type': 'application/json',

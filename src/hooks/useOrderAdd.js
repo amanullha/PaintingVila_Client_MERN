@@ -12,11 +12,11 @@ const useOrderAdd = (order) => {
         <MyLoading />
     }
 
-    
+
     if (user) {
 
         order.userEmail = user?.email;
-        fetch(`http://localhost:5000/orders`, {
+        fetch(`https://whispering-ravine-55878.herokuapp.com/orders`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

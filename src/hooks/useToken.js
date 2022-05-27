@@ -21,13 +21,13 @@ const useToken = (user) => {
 
             email: email,
             name: displayName,
-            image:image
+            image: image
         }
 
         if (email) {
 
 
-            fetch(`http://localhost:5000/user/${email}`, {
+            fetch(`https://whispering-ravine-55878.herokuapp.com/user/${email}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'

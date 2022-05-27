@@ -53,7 +53,7 @@ const AddNewProduct = () => {
 
                     // add doctor 
 
-                    fetch('http://localhost:5000/product', {
+                    fetch('https://whispering-ravine-55878.herokuapp.com/product', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

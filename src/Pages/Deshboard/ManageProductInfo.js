@@ -38,7 +38,7 @@ const ManageProductInfo = ({ callFrom }) => {
 
 
 
-    const { data: products, isLoading, refetch } = useQuery('products', () => fetch(`http://localhost:5000/products`, {
+    const { data: products, isLoading, refetch } = useQuery('products', () => fetch(`https://whispering-ravine-55878.herokuapp.com/products`, {
         method: 'GET',
         headers: {
             'content-type': 'application/json',
@@ -58,7 +58,7 @@ const ManageProductInfo = ({ callFrom }) => {
         }
         if (deleteProduct) {
 
-            fetch(`http://localhost:5000/product/${deleteProduct}`, {
+            fetch(`https://whispering-ravine-55878.herokuapp.com/product/${deleteProduct}`, {
                 method: 'DELETE',
                 headers: {
                     'content-type': 'application/json',
@@ -101,7 +101,7 @@ const ManageProductInfo = ({ callFrom }) => {
         console.log("Product: ", product);
 
 
-        fetch("http://localhost:5000/product", {
+        fetch("https://whispering-ravine-55878.herokuapp.com/product", {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',

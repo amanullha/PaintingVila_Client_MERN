@@ -21,7 +21,7 @@ const MyAppointment = () => {
     useEffect(() => {
 
         if (user) {
-            fetch(`http://localhost:5000/myBooking?patient=${user.email}`, {
+            fetch(`https://whispering-ravine-55878.herokuapp.com/myBooking?patient=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',
@@ -32,7 +32,7 @@ const MyAppointment = () => {
                     console.log(res);
 
                     if (res.status === 401 || res.status === 403) {
-                        
+
                         signOut(auth);
                         localStorage.removeItem('accessToken');
                         navigate('/login')
