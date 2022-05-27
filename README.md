@@ -1,6 +1,6 @@
 # Painting Vila MERN stack project
 
-[Visit Now](https://stock-binder-ef7f4.web.app/) 🚀
+[Visit Now](https://painting-vila.web.app/) 🚀
 
 This is a manufacturer website . The owner of the website will be sell their manufactures tools. User will be able to buy painting tools from this website.
 
@@ -22,11 +22,11 @@ This is a manufacturer website . The owner of the website will be sell their man
 
 **Deployed On (FontEnd):**
 
-![Firebase](https://img.shields.io/badge/-Firebase-orange)
+![Firebase](https://painting-vila.web.app/)
 
 **Deployed On (BackEnd):**
 
-![heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+![heroku](https://dashboard.heroku.com/apps/whispering-ravine-55878/)
 
 ## 🚀 Features
 
