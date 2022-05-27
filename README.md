@@ -1,3 +1,96 @@
+# StockBinder MERN stack project
+
+[Visit Now](https://stock-binder-ef7f4.web.app/) 🚀
+
+This is a inventory management website . user will be able to add item and update item . but a user can only delete those items which was added by this user. but all user will be able to update/restock the items.
+
+## 🖥️ Tech Stack
+
+**Frontend:**
+
+![reactjs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp;
+![react-router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)&nbsp;
+
+![tailwindcss](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)&nbsp;
+
+**Backend:**
+
+![nodejs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)&nbsp;
+![expressjs](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)&nbsp;
+![mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)&nbsp;
+![jwt](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)&nbsp;
+
+**Deployed On (FontEnd):**
+
+![Firebase](https://img.shields.io/badge/-Firebase-orange)
+
+**Deployed On (BackEnd):**
+
+![heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+
+## 🚀 Features
+
+- Login/SignupUser Account
+- Login using Email/Username
+- Login using Google
+- Reset Password Mail using React hook
+- Explore website
+- Manage inventories
+- Add/update product via valid user
+- Delete own product
+- See added product which added by me
+
+[Branch(FontEnd)](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-amanullha)
+
+[Branch(BackEnd)](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-amanullha)
+
+## FontEnd Design 🙈 :
+
+<table>
+ 
+  <tr>
+    <td><img src="https://i.ibb.co/bz9YYzd/Screenshot-from-2022-05-08-02-23-21.png" alt="mockups" /></td>
+    <td><img src="https://i.ibb.co/rMkcBtX/Screenshot-from-2022-05-08-02-20-38.png" alt="mockup" /></td>
+    
+  </tr>
+   <tr>
+    <td><img src="https://i.ibb.co/mhYXL9M/Screenshot-from-2022-05-08-02-20-03.png" alt="mockup" /></td>
+    <td><img src="https://i.ibb.co/w09LCw9/Screenshot-from-2022-05-08-02-20-18.png" alt="mockups" /></td>
+  </tr>
+</table>
+
+## Installed packages
+
+- npm install react-router-dom@6
+- npm install axois
+- npm install firebase
+- npm install --save react-firebase-hooks
+- npm i react-fontawesome
+- npm install react-hook-form
+- npm install -D tailwindcss postcss autoprefixer
+- npx tailwindcss init -p
+- npm i styled-components
+- npm install react-icons
+- npm i --save @fortawesome/fontawesome-svg-core
+- npm i --save @fortawesome/free-solid-svg-icons
+- npm i --save @fortawesome/free-regular-svg-icons
+- npm i react-toastify
+- npm install --save react-toastify
+- npm i infinite-react-carousel
+- npm install react-loader-spinner --save
+- npm install react-reveal --save
+- npm install -g firebase-tools
+
+<br/>
+<br/>
+<br/>
+<br/>
+<h2>📬 Contact</h2>
+
+If you want to contact me, you can reach me through below handles.
+
+[![linkedin](https://www.linkedin.com/in/md-aman-ullha-9a9527161/)]
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

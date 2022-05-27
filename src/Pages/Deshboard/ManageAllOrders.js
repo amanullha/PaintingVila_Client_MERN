@@ -77,11 +77,11 @@ const ManageAllOrders = () => {
     }
 
     return (
-        <div className='my-8'>
+        <div className=''>
 
-            <h1 className='text-center text-3xl my-3 font-bold tracking-wider'>My Orders {orders?.length}</h1>
+            <h1 className='text-center text-3xl my-3 font-bold tracking-wider'>My Orders </h1>
 
-
+            {/* {orders?.length} */}
 
 
 

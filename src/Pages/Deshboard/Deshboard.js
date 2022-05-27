@@ -70,6 +70,11 @@ const Deshboard = () => {
 
                     <ul className="menu p-4  overflow-y-auto w-52 bg-base-100 text-base-content bg-white ">
 
+                        <div>
+                            <h1 className='text-2xl font-bold text-yellow-600 text-center'>Dashboard</h1>
+                            <hr />
+                        </div>
+
 
 
                         {/* <!-- Sidebar content here --> */}

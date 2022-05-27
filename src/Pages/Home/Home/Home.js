@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import BusinessSummary from '../BusinessSummary/BusinessSummary';
 import Products from '../Products/Products';
 import Reviews from '../Reviews/Reviews';
 
@@ -11,8 +12,10 @@ const Home = () => {
 
             <div className="">
                 <div className='bg-white bg-opacity-80'>
+
                     <Banner />
                     <Products callFrom="home" />
+                    <BusinessSummary />
                     <Reviews />
                 </div>
 
