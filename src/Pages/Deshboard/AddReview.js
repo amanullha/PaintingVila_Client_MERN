@@ -189,32 +189,7 @@ const AddReview = () => {
 
                     </div>
 
-                    <div>
-                        <div style={styles.container}>
-                            <h2> React Ratings </h2>
-                            <div style={styles.stars}>
-                                {stars.map((_, index) => {
-                                    return (
-                                        <FaStar
-                                            key={index}
-                                            size={24}
 
-                                            color={(currentValue) > index ? colors.orange : colors.grey}
-                                            style={{
-                                                marginRight: 10,
-                                                cursor: "pointer"
-                                            }}
-                                        />
-                                    )
-                                })}
-                            </div>
-
-                            <h1>{hoverValue} {currentValue} {stars}</h1>
-
-
-
-                        </div>
-                    </div>
 
 
 
