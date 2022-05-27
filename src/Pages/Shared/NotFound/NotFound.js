@@ -252,15 +252,15 @@ const NotFound = () => {
                                     </linearGradient>
                                     <linearGradient id="paint1_linear" x1="326.925" y1="147.902" x2="330.395" y2="242.079" gradientUnits="userSpaceOnUse">
                                         <stop />
-                                        <stop offset="1" stop-opacity="0" />
+                                        <stop offset="1" stopOpacity="0" />
                                     </linearGradient>
                                     <linearGradient id="paint2_linear" x1="344.3" y1="64.1527" x2="344.961" y2="87.284" gradientUnits="userSpaceOnUse">
                                         <stop stop-color="white" />
-                                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                                        <stop offset="1" stop-color="white" stopOpacity="0" />
                                     </linearGradient>
                                     <linearGradient id="paint3_linear" x1="130.102" y1="26.1247" x2="132.084" y2="77.0139" gradientUnits="userSpaceOnUse">
                                         <stop stop-color="white" />
-                                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                                        <stop offset="1" stop-color="white" stopOpacity="0" />
                                     </linearGradient>
                                     <linearGradient id="paint4_linear" x1="455.752" y1="229.215" x2="433.942" y2="41.3544" gradientUnits="userSpaceOnUse">
                                         <stop stop-color="#E8D197" />
@@ -292,7 +292,7 @@ const NotFound = () => {
                                     </linearGradient>
                                     <linearGradient id="paint11_linear" x1="575.336" y1="236.543" x2="417.383" y2="126.175" gradientUnits="userSpaceOnUse">
                                         <stop stop-color="white" />
-                                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                                        <stop offset="1" stop-color="white" stopOpacity="0" />
                                     </linearGradient>
                                     <linearGradient id="paint12_linear" x1="529.726" y1="200.324" x2="554.29" y2="176.972" gradientUnits="userSpaceOnUse">
                                         <stop stop-color="#FECBA6" />
@@ -316,7 +316,7 @@ const NotFound = () => {
                                     </linearGradient>
                                     <linearGradient id="paint17_linear" x1="75.5473" y1="236.543" x2="233.501" y2="126.174" gradientUnits="userSpaceOnUse">
                                         <stop stop-color="white" />
-                                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                                        <stop offset="1" stop-color="white" stopOpacity="0" />
                                     </linearGradient>
                                     <linearGradient id="paint18_linear" x1="124.267" y1="190.961" x2="113.114" y2="194.142" gradientUnits="userSpaceOnUse">
                                         <stop stop-color="#FECBA6" />

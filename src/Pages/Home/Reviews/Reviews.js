@@ -43,6 +43,7 @@ const Reviews = () => {
                         blogWriter={r?.reviewer}
                         blogWriterImg={r?.reviewerImage}
                         blogWritingDate={r?.reviewDate}
+                        currentValue={r?.reviewStars}
 
                     />)
                 }

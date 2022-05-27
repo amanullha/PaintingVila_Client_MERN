@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { useQuery } from 'react-query';
+// import Rating from 'react-rating';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import MyLoading from '../Shared/MyLoading/MyLoading';
 // import { StarRatingInput } from 'react-star-rating-input'
+import { FaStar } from "react-icons/fa";
+
+const colors = {
+    orange: "#FFBA5A",
+    grey: "#a9a9a9"
+
+};
 
 
 const AddReview = () => {
@@ -13,7 +21,11 @@ const AddReview = () => {
     let errorMessage;
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
     const [user, loading, error] = useAuthState(auth);
+    const [rating, setRating] = useState(2);
 
+    const [currentValue, setCurrentValue] = useState(0);
+    const [hoverValue, setHoverValue] = useState(undefined);
+    const stars = Array(5).fill(0)
 
     if (loading) {
         return <MyLoading />
@@ -28,7 +40,8 @@ const AddReview = () => {
             reviewer: user?.displayName,
             reviewerImage: user?.photoURL,
             reviewProduct: data?.name,
-            reviewDate: getDateAndTime
+            reviewDate: getDateAndTime,
+            reviewStars: currentValue
         };
 
         fetch('http://localhost:5000/review', {
@@ -44,6 +57,7 @@ const AddReview = () => {
                 if (inserted.insertedId) {
                     toast.success("Review posted")
                     reset();
+                    setCurrentValue(0);
                 }
                 else {
                     toast.warning("Failed to post review")
@@ -59,9 +73,18 @@ const AddReview = () => {
         return new Date().toLocaleString();
     }
 
+    const handleClick = value => {
+        setCurrentValue(value)
+        console.log(currentValue);
+    }
 
+    const handleMouseOver = newHoverValue => {
+        setHoverValue(newHoverValue)
+    };
 
-
+    const handleMouseLeave = () => {
+        setHoverValue(undefined)
+    }
 
 
     return (
@@ -80,7 +103,7 @@ const AddReview = () => {
 
                         <input
                             type="text"
-                            placeholder="Your Name"
+                            placeholder="Product Name"
                             className="input input-bordered w-full max-w-xs"
                             {
                             ...register("name", {
@@ -111,7 +134,7 @@ const AddReview = () => {
 
                         <textarea
                             type="review"
-                            placeholder="Write your review"
+                            placeholder=" What's your experience?"
                             className="textarea textarea-bordered w-full max-w-xs"
                             {
                             ...register("review", {
@@ -132,16 +155,66 @@ const AddReview = () => {
                         </label>
 
                     </div>
-                    {/* <div className="form-control w-full max-w-xs">
-
-                        <StarRatingInput
-                            size={5}
-                            value={this.state.value}
-                            onChange={this.handleChange} />
-
-                    </div> */}
 
 
+
+
+                    <div className="form-control w-full max-w-xs">
+                        <div style={styles.container}>
+                            <h2> React Ratings </h2>
+                            <div style={styles.stars}>
+                                {stars.map((_, index) => {
+                                    return (
+                                        <FaStar
+                                            key={index}
+                                            size={24}
+                                            onClick={() => handleClick(index + 1)}
+                                            onMouseOver={() => handleMouseOver(index + 1)}
+                                            onMouseLeave={handleMouseLeave}
+                                            color={(hoverValue || currentValue) > index ? colors.orange : colors.grey}
+                                            style={{
+                                                marginRight: 10,
+                                                cursor: "pointer"
+                                            }}
+                                        />
+                                    )
+                                })}
+                            </div>
+
+                            <h1>{hoverValue} {currentValue} {stars}</h1>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div style={styles.container}>
+                            <h2> React Ratings </h2>
+                            <div style={styles.stars}>
+                                {stars.map((_, index) => {
+                                    return (
+                                        <FaStar
+                                            key={index}
+                                            size={24}
+
+                                            color={(currentValue) > index ? colors.orange : colors.grey}
+                                            style={{
+                                                marginRight: 10,
+                                                cursor: "pointer"
+                                            }}
+                                        />
+                                    )
+                                })}
+                            </div>
+
+                            <h1>{hoverValue} {currentValue} {stars}</h1>
+
+
+
+                        </div>
+                    </div>
 
 
 
@@ -164,6 +237,32 @@ const AddReview = () => {
 
         </div>
     );
+};
+const styles = {
+    container: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center"
+    },
+    stars: {
+        display: "flex",
+        flexDirection: "row",
+    },
+    textarea: {
+        border: "1px solid #a9a9a9",
+        borderRadius: 5,
+        padding: 10,
+        margin: "20px 0",
+        minHeight: 100,
+        width: 300
+    },
+    button: {
+        border: "1px solid #a9a9a9",
+        borderRadius: 5,
+        width: 300,
+        padding: 10,
+    }
+
 };
 
 export default AddReview;
