@@ -69,7 +69,7 @@ const Banner = () => {
                     <Fade right>
                         <h1 className='text-xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-yellow-500 '>Handcrafted by Pros, for Pros.
 
-                            {/* <sub className='text-xs bg-green-300 py-1 px-2 rounded-full text-gray-500 opacity-75'>SAFETY FIRST</sub> */}
+
                         </h1>
                     </Fade>
 
