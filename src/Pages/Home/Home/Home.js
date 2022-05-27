@@ -1,6 +1,8 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import BruchOn from '../BruchOn/BruchOn';
 import BusinessSummary from '../BusinessSummary/BusinessSummary';
+import PartnerShip from '../PartnerShip/PartnerShip';
 import Products from '../Products/Products';
 import Reviews from '../Reviews/Reviews';
 
@@ -16,7 +18,11 @@ const Home = () => {
                     <Banner />
                     <Products callFrom="home" />
                     <BusinessSummary />
+                    <BruchOn />
+
                     <Reviews />
+                    <PartnerShip />
+
                 </div>
 
             </div >
