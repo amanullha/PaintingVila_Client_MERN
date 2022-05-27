@@ -24,6 +24,7 @@ import useAdmin from './hooks/useAdmin';
 import auth from './firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import NotFound from './Pages/Shared/NotFound/NotFound';
+import About from './Pages/About/About';
 
 
 function App() {
@@ -64,6 +65,12 @@ function App() {
 
 
         </Route>
+
+
+        <Route path="/about" element={<About />}></Route>
+
+
+
         <Route path='*' element={<NotFound />} />
 
       </Routes>
