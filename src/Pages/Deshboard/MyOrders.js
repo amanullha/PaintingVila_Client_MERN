@@ -212,7 +212,7 @@ const MyOrders = () => {
                         <p className="py-4">To cancel the order press [YES] button,else press[NO]</p>
 
                         <div className='flex justify-center w-full mt-5 gap-5'>
-                            <button onClick={handleDeleteOrderedItem} className='btn btn-error'>YES</button>
+                            <button htmlFor="cancel-modal" onClick={handleDeleteOrderedItem} className='btn btn-error'>YES</button>
                             <label htmlFor="cancel-modal" className='btn btn-success'>NO</label>
                         </div>
                     </div>
