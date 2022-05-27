@@ -1,8 +1,8 @@
-# StockBinder MERN stack project
+# Painting Vila MERN stack project
 
 [Visit Now](https://stock-binder-ef7f4.web.app/) 🚀
 
-This is a inventory management website . user will be able to add item and update item . but a user can only delete those items which was added by this user. but all user will be able to update/restock the items.
+This is a manufacturer website . The owner of the website will be sell their manufactures tools. User will be able to buy painting tools from this website.
 
 ## 🖥️ Tech Stack
 
