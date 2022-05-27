@@ -10,7 +10,7 @@ const colors = {
 
 };
 
-const SingleBlog = ({ blogText, blogQuestion, blogWriter, blogWriterImg, blogWritingDate, currentValue }) => {
+const SingleReview = ({ blogText, blogQuestion, blogWriter, blogWriterImg, blogWritingDate, currentValue }) => {
 
     const stars = Array(5).fill(0);
 
@@ -159,4 +159,4 @@ const styles = {
 
 };
 
-export default SingleBlog;
+export default SingleReview;

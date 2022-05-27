@@ -1,7 +1,7 @@
 
 
 import React, { useState } from 'react';
-import SingleBlog from '../../Home/Reviews/SingleBlog'
+import SingleReview from '../../Home/Reviews/SingleReview'
 
 const Reviews = () => {
 
@@ -36,7 +36,7 @@ const Reviews = () => {
 
 
                 {
-                    reviews?.map(r => <SingleBlog
+                    reviews?.map(r => <SingleReview
                         key={r?._id}
                         blogQuestion={r?.reviewProduct}
                         blogText={r?.review}

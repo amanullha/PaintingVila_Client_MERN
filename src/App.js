@@ -27,6 +27,7 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import About from './Pages/About/About';
 import ContactUs from './Pages/ContactUs/ContactUs';
 import Portfolio from './Pages/Portfolio/Portfolio';
+import Blogs from './Pages/Blogs/Blogs/Blogs';
 
 
 function App() {
@@ -72,6 +73,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact-us" element={<ContactUs />}></Route>
         <Route path="/portfolio" element={<Portfolio />}></Route>
+        <Route path="/blog" element={<Blogs />}></Route>
 
 
 
