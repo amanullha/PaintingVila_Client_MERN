@@ -1,10 +1,7 @@
 
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyAzqGRtN5ExPaU1bw1Vs2_pWT9MIJCV0FY",
     authDomain: "painting-vila.firebaseapp.com",
